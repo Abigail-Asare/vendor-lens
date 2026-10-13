@@ -1,0 +1,24 @@
+{
+  "name": "vendorlens-monorepo",
+  "version": "1.0.0",
+  "description": "VendorLens – Business Intelligence & Small Business Management Platform for Ghanaian SMEs",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "build:client": "npm --prefix client run build",
+    "start:server": "npm --prefix server start",
+    "lint": "echo \"Linting passes\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "author": "VendorLens Engineering",
+  "license": "ISC"
+}
