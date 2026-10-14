@@ -13,7 +13,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body class="bg-navy-50 text-navy-900 font-sans antialiased min-h-screen selection:bg-brand-100 selection:text-brand-900">
-    <div id="root"></div>
+    <div id="root">
+      <!-- Fallback display when opened with VS Code "Live Server" instead of the Vite dev server -->
+      <div style="min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px; font-family: 'Inter', system-ui, -apple-system, sans-serif; background-color: #f8fafc; color: #0f172a;">
+        <div style="max-width: 620px; width: 100%; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 32px; box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.08);">
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+            <div style="width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, #1d4ed8, #3b82f6); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 20px;">
+              VL
+            </div>
+            <div>
+              <h1 style="font-size: 20px; font-weight: 700; margin: 0; color: #0f172a;">VendorLens</h1>
+              <p style="font-size: 12px; color: #64748b; margin: 2px 0 0 0;">Understand your business through your data</p>
+            </div>
+          </div>
+
+          <div style="background-color: #eff6ff; border: 1px solid #bfdbfe; border-radius: 10px; padding: 14px 16px; margin-bottom: 20px;">
+            <p style="font-size: 13px; font-weight: 600; color: #1e40af; margin: 0 0 4px 0;">Why is this screen showing?</p>
+            <p style="font-size: 12px; color: #1e3a8a; margin: 0; line-height: 1.5;">
+              You launched this using VS Code's <strong>"Go Live" / Live Server</strong>. Live Server only works for static HTML. Modern React applications use <strong>Vite</strong> to compile JSX files (<code>.jsx</code>), bundle npm packages, and process Tailwind CSS on the fly.
+            </p>
+          </div>
+
+          <h2 style="font-size: 14px; font-weight: 600; color: #334155; margin: 0 0 12px 0; text-transform: uppercase; letter-spacing: 0.5px;">How to start the live application:</h2>
+          <ol style="margin: 0; padding-left: 20px; font-size: 13px; color: #334155; line-height: 1.8;">
+            <li><strong>Install Node.js:</strong> If not installed yet, download the LTS version from <a href="https://nodejs.org" target="_blank" style="color: #2563eb; text-decoration: underline;">nodejs.org</a> or ask your assistant to install it.</li>
+            <li><strong>Install dependencies:</strong> Open your terminal and run:<br/>
+              <code style="background: #f1f5f9; padding: 3px 8px; border-radius: 6px; font-family: monospace; font-size: 12px; display: inline-block; margin-top: 4px; color: #0f172a;">npm run install:all</code>
+            </li>
+            <li><strong>Start development server:</strong><br/>
+              <code style="background: #f1f5f9; padding: 3px 8px; border-radius: 6px; font-family: monospace; font-size: 12px; display: inline-block; margin-top: 4px; color: #0f172a;">npm run dev</code>
+            </li>
+            <li><strong>Open your browser:</strong> Navigate to <strong style="color: #2563eb;">http://localhost:5173</strong></li>
+          </ol>
+
+          <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid #f1f5f9; font-size: 11px; color: #94a3b8; text-align: center;">
+            When the Vite dev server starts, React will automatically mount and replace this message with your live interactive dashboard.
+          </div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
